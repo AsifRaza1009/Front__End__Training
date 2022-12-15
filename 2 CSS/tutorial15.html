@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /*  while using id  */
+        #firstpar{ 
+            color: green;
+            background-color: yellowgreen;
+        }
+/* while using class */
+        .blue{
+    color:blue;
+    background-color: aqua;
+}
+/* while using class and id both */
+.red{ 
+    color:red;
+    background-color: azure;
+}
+/* while using simple selector */
+div{
+    color: orange;
+}
+/*  group of elements in combined */
+footer,span{
+    color: brown;
+    background-color: cadetblue;
+    border: 3px solid gray;
+}
+    </style>
+</head>
+<body>
+    <h3>CSS selector </h3>
+    <!-- while using id  -->
+<p id="firstpar"> This is a simple paraghraph to demonstrate the selector</p>
+<!-- while using class -->
+<p id="secondpara" class="blue"> This is second simple paraghraph to demonstrate the selector</p>
+<!-- while using class and id both -->
+<p id="thirdpara" class="red bgblue"> This is third simple paraghraph to demonstrate the selector</p>
+<!-- while using simple selector -->
+<div id="green">
+    <p> This is fourth simple paraghraph to demonstrate the selector</p>
+</div>
+<!-- group of elements in combined -->
+<span> this is span</span>
+<footer> this is a footer</footer>
+
+
+</body>
+</html>
