@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Manu</title>
+    <style>
+      .navbar {
+        background-color: rgb(0, 195, 255);
+        border-radius: 45px;
+      }
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        padding: 5px 15px;
+        margin: 13px 13px;
+      }
+      .navbar li a {
+        padding: 10px 3px;
+        text-decoration: none;
+        margin: auto;
+      }
+      .navbar li a:hover {
+       color: red;
+        padding: 3px 3px;
+        text-decoration: none;
+        margin: auto;
+      }
+      .search {
+        float: right;
+        padding: 13px 20px;
+        color: white;
+      }
+      .navbar search input{
+        border-radius: 40px solid rgb(20, 223, 20);
+        padding: 15px 15px;
+        margin: 45px;
+        width: 120px;
+      }
+/* bascially in this video we learn how to set a header bar */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+
+          <div class="search">
+            <input type="text" name="Search" id="search" placeholder="Serach" />
+          </div>
+        </ul>
+      </nav>
+      <h3>Navigation Bar</h3>
+      <p>How to set a header bar which technically we speack Nevigation bar</p>
+    </header>
+  </body>
+</html>
