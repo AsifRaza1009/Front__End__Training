@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+  </head>
+  <style>
+    .container {
+      height: 345px;
+      width: 100%;
+      border: 2px solid rgb(114, 96, 96);
+      display: flex;
+      /* properties of flex container  */
+      /* flex-direction: row; by defaulte its row 
+      flex-wrap: wrap; or line no 18 */
+      flex-flow: row wrap;/* combining two property as define in line no 16 17*/
+      justify-content: center;/*placing in center*/
+       justify-content: space-between;/* space between the blocks*/
+       align-items: center; /* to center  the blocks in vertical direction */
+      align-items: stretch;
+
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      border: 2px solid #e40f2c;
+      margin: 10px;
+      padding: 4px;
+    }
+    #item-1{
+        /* order: 20; */
+        /* flex-grow:3 ; */
+    }
+    #item-2{
+        order: 35;
+        /* flex-shrink:3 ; */
+        flex-basis: 300px;
+    }
+    #item-3{
+        /* order: 40; */
+        flex: 2 3 5px;
+        align-self: flex-end;
+        align-self: flex-start;
+    }
+  </style>
+
+  <body>
+    <h3>This is flex box tutorial</h3>
+    <div class="container">
+      <div class="item" id="item-1">First Box</div>
+      <!-- <p> this is the first box</p> -->
+      <div class="item" id="item-2">Second Box</div>
+      <div class="item" id="item-3">Third Box</div>
+      <!-- <div class="item" id="item-4">Fourth Box</div>
+      <div class="item" id="item-5">Fifth Box</div>
+      <div class="item" id="item-6">Sixth box</div> -->
+    </div>
+  </body>
+</html>
