@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow And Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+
+        }
+        .card{
+            padding: 10px 20px;
+            margin: 25px 25px;
+            /* border: 3px solid red; */
+            background-color: rgb(137, 248, 11);
+            box-shadow:5px 5px 20px 15px rgb(147, 180, 147),5px 5px 20px 15px rgb(224, 32, 32);
+
+        }
+        .card h2{
+            text-shadow: 10px 15px 3px  red;
+            opacity: 0.9;
+        }
+        .card p{
+            text-shadow: 10px 15px 3px  red;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="car-1">
+      <h2>This is C++ course</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, assumenda.</p></div>
+      <div class="card" id="car-2">
+        <h2>This is JS course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, assumenda.</p>
+      </div>
+      <div class="card" id="car-3">
+        <h2>This is HTML course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, assumenda.</p>
+      </div>
+      <div class="card" id="car-4">
+        <h2>This is next course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, assumenda.</p>
+      </div>
+      <div class="card" id="car-5">
+        <h2>This is CSS course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, assumenda.</p>
+      </div>
+    </div>
+  </body>
+</html>

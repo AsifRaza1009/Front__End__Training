@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable/Custom Properties</title>
+    <style>
+        :root{
+            --primary-color: red;
+            --danger-color:blue;
+        }
+.box{
+    --box-color: rgb(0, 255, 13);
+    width: 200px;
+    height: 200px;
+    background-color:var(--box-color);
+    border: 3px solid rgb(228, 20, 124);
+    box-shadow: 2px 5px 10px var(--box-color);
+    margin: 5px 5px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* variable can used within the block if you want to use the at every place you have to define in root */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+    </div>
+
+    
+</body>
+</html>
