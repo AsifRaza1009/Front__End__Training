@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations $ Keyframes</title>
+</head>
+<style>
+.container{
+    background-color:yellow;
+}
+.box{
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    animation-name: asif;
+    animation-duration: 15s;
+    animation-iteration-count: 30;
+}
+p{
+    color: red;
+    text-align: center;
+    animation-name: asif2;
+    animation-duration: 5s;
+    animation-iteration-count: 30;
+    animation-composition:15px;
+    animation-delay: 2s;
+    animation-direction: reverse;
+}
+/* @keyframes asif2{
+    from{
+        width: 100px;
+        
+    }
+    to{
+        width: 1000px;
+    }
+} */
+@keyframes asif{
+    0%{
+top:0px;
+left:0px;
+    }
+    25%{
+        top:250px;
+        left:0px
+    }
+    50%{
+        top:250px;
+        left:500px;
+    }
+    75%{
+        top:0px;
+        left:500px;
+
+    }
+    100%{
+        top:0px;
+        left:0px;
+    }
+}
+
+    
+
+   
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+          <p>This is a box</p>  
+        </div>
+    </div>
+</body>
+</html>
