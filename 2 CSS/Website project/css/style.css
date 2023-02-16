@@ -1,0 +1,208 @@
+/* CSS Rest */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#log {
+  margin: -13px 9px;
+}
+#log img {
+  height: 35px;
+  margin: 25px 25px;
+}
+
+#navbar ul {
+  display: flex;
+}
+#navbar::before {
+  content: "";
+  background-color: rgb(70, 111, 124);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  top: 0px;
+  left: 0px;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+#navbar ul li a {
+  color: rgb(19, 18, 18);
+  padding: 3px 20px;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: rgb(39, 39, 83);
+  background-color: rgb(183, 243, 183);
+}
+/* Home Section  */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  align-items: center;
+  height: 500px;
+}
+#home::before {
+  content: "";
+  background: url("../img/pizza.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 575px;
+  z-index: -1;
+  opacity: 0.7;
+  top: 0px;
+  left: 0px;
+}
+#home h1 {
+  color: black;
+  text-align: center;
+}
+#home p {
+  color: rgb(20, 9, 9);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Services section */
+#services {
+  display: flex;
+  margin: 20px;
+}
+
+#services .box {
+  border: 2px solid rgb(175, 164, 164);
+  border-radius: 23px;
+  background-color: rgb(112, 180, 211);
+  padding: 5px 10px;
+  margin: 5px 7px;
+}
+
+#services .box img {
+  height: auto;
+  display: block;
+  margin: auto;
+  padding-top: 12px;
+}
+#client-section {
+  height: 300px;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../img/display.jpg") no-repeat center;
+  width: 100%;
+  height: 45%;
+  z-index: -1;
+  opacity: 0.5;
+}
+#clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-item {
+  padding: 35px;
+}
+#clients img {
+  height: 150px;
+}
+
+/* contact section */
+
+#contact {
+  position: relative;
+  padding: 35px;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  background: url("../img/manucard.jpg") no-repeat center center/cover;
+}
+#contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: rgb(115, 231, 231);
+}
+#contact-box form {
+  width: 35%;
+}
+#contact-box label {
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+button {
+  size: 0lvw;
+  padding: 10px 20px;
+  justify-content: center;
+  background-color: rgb(74, 145, 228);
+  border-radius: 10px;
+  border: 2px solid rgb(98, 177, 197);
+  font: bold;
+  margin: 10px;
+}
+button:hover {
+  color: rgb(39, 39, 83);
+  background-color: rgb(183, 243, 183);
+}
+footer {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+}
+/* Utility class */
+.h-primary {
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.h-secondary {
+  font-size: 1.3rem;
+  padding: 30px;
+}
+
+.btn {
+  color: rgb(245, 245, 250);
+  background-color: rgb(121, 121, 204);
+  text-align: center;
+  font-size: 1.2rem;
+  border: 2px solid rgb(25, 37, 211);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgb(39, 39, 83);
+  background-color: rgb(183, 243, 183);
+}
+.center {
+  text-align: center;
+}
